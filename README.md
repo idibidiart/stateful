@@ -38,7 +38,7 @@ What the video doesn't show but is already implemented and can be seen in the co
 
 Use pre-existing framework-independent HTML/SVG/Canvas/WebGL widgets in Stateful.JS components:
 
-See the D3-powered chartWidget.js and the ListView Stateful.JS component in components.js for an example of using pre-existing, framework-indepedent D3 widget inside of Stateful.JS components. Similaryly, framework-independent HTML, Canvas and WebGL components (developed with any library) maybe used inside of Stateful.JS components. 
+See the D3-powered chartWidget.js and the ListView Stateful.JS component in components.js for an example of using pre-existing, framework-indepedent D3 widget inside of Stateful.JS components. Similarly, framework-independent HTML, Canvas and WebGL components (developed with any library) maybe used inside of Stateful.JS components. 
 
 What is next:
 
