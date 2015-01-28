@@ -1,0 +1,10 @@
+#!/bin/sh
+./insert @insertSettings ../js/settings.js ../js/index.js > index.1.js
+./insert @insertSelectors ../js/selectors.js index.1.js > index.2.js
+./insert @insertEvents ../js/events.js index.2.js > index.3.js
+./insert @insertComponents ../js/components.js index.3.js > index.4.js
+./insert @insertCommonComponentExtensions ../js/commonComponentExtensions.js index.4.js > index.5.js
+./insert @insertCommonEventHandlers ../js/commonEventHandlers.js index.5.js > index.6.js
+./insert @insertMockCounterData ../mocks/mockCounterData.js index.6.js > index.7.js
+./insert @insertMockSearchData ../mocks/mockSearchData.js index.7.js > index.8.js
+./insert @insertMockProblemsListStateObject ../mocks/mockProblemsListStateObject.js index.8.js > ../index.bundle.js

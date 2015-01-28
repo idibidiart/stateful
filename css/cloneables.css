@@ -1,0 +1,265 @@
+
+.chart-title {
+  display: block !important;}
+
+.chart-container {
+  display: block !important;}
+
+.search-button {
+  margin-top: 2rem;}
+
+[button-clone] {
+
+  height: 2rem;display: block;text-align: left;
+
+}  
+
+.box-container {
+  position: relative;
+  margin: 1rem;
+  border-radius: .25rem;
+  background: white;
+  padding: 2.5rem 2.5rem 9.5rem;
+  height: 11.5rem;
+  z-index: 1; }
+.box-container .body .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #2bbdd4;
+    margin-bottom: 0.625rem; }
+.box-container .body .expand-list {
+    display: inline-block;
+    color: #2bbdd4;
+    margin: 1rem 0rem;
+    font-weight: 500;
+    font-size: 0.9rem; }
+.box-container .body .expand-list:hover {
+      color: #0040ff;
+      cursor: pointer; }
+.box-container .footer {
+    background: #f5f5f5; }
+.box-container .title-text * {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #2bbdd4;
+    margin-bottom: 0.625rem; }
+.box-container .title-text {
+    font-weight: 450;
+    font-size: 1.5rem;
+    color: #2bbdd4;
+    margin-bottom: 0.625rem; }
+.box-container .search-box-input {
+    display: block;
+    width: 25rem;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem; }
+.box-container .search-box-input:after {
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-family: 'iconFont';
+      content: "\e601"; }
+.box-container .search-box-suggestions {
+    width: 25rem;
+    border-top: none;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    font-size: 1.2rem;
+    max-height: 32rem;
+    overflow-y: scroll;
+    background-color: white; }
+.box-container .search-box-suggestions div {
+      background-color: transparent;
+      padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+      line-height: 2rem;}
+
+.box-container.thin {
+  height: 3.125rem;
+  padding: 0.625rem 2rem 0.625rem;}
+.box-container.thin:before {
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-family: 'iconFont';
+    font-size: 1.95rem;
+    content: "\e604";
+    color: #7E7373;
+    cursor: pointer; }
+
+.problems-container {
+  position: relative;
+  margin: 1rem;
+  padding: 2rem 2.5rem 0.625rem 0.625rem;
+  border-radius: 4px;
+  background: white; }
+.problems-container:before {
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-family: 'iconFont';
+    font-size: 1.95rem;
+    content: "\e603";
+    color: #7E7373;
+    cursor: pointer; }
+.problems-container .header .icon-clone {
+    position: absolute;
+    top: 0.625rem;
+    right: 0.625rem;}
+.problems-container .body .title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #2bbdd4;
+    margin-bottom: 0.625rem; }
+.problems-container .body .expand-list {
+    display: inline-block;
+    color: #2bbdd4;
+    margin: 1rem 0rem;
+    font-weight: 300;
+    font-size: 0.9rem; }
+.problems-container .body .expand-list:hover {
+      color: #0040ff;
+      cursor: pointer; }
+.problems-container .footer {
+    background: #f5f5f5; }
+.problems-container .problems-list {
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    list-style: none; }
+.problems-container .problems-list .list-item {
+      position: relative;
+      font-size: 0.9rem;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0.5rem; }
+.problems-container .problems-list .list-item div {
+        display: inline-block; }
+.problems-container .problems-list .list-item .type {
+        width: 2rem;
+        height: 2rem;
+        line-height: 2rem;
+        font-size: 1.6rem;
+        text-align: center;
+        background: #f6b335;
+        color: white;
+        border-radius: 2px; }
+.problems-container .problems-list .list-item .text {
+      margin-left: 0.625rem;
+      vertical-align: super; 
+      font-size: 1.25rem;
+      cursor: pointer;}
+.problems-container .problems-list .list-item .group_right {
+      position: absolute;
+      right: 0rem;
+      height: 2rem;
+      line-height: 2rem; }
+.problems-container .problems-list .list-item .group_right .timestamp {
+        border-right: 1px solid #cccccc;
+        padding: 0 1rem; 
+        font-size: 1.25rem;}
+.problems-container .problems-list .list-item .group_right .newtab {
+        padding: 0 1rem;
+        font-size: 1.3rem;
+        vertical-align: text-bottom;
+        cursor: pointer; }
+
+.list-container {
+  position: relative;
+  margin: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #fff;
+  box-shadow: 0.125rem 0.125rem 0.25rem #aaa; }
+.list-container:before {
+    position: absolute;
+    display: block;
+    top: 0.625rem;
+    right: 0.625rem;
+    font-family: 'iconFont';
+    font-size: 1.95rem;
+    content: "\e603";
+    color: #7E7373;
+    cursor: pointer; }
+.list-container .header {
+    padding: 0.6875rem 0.6875 1rem 0.6875rem;
+    border-bottom: 1px solid #aaa;
+    font-size: 1.3rem;
+    color: #555; }
+.list-container .header .icon-config {
+    vertical-align: sub;
+    font-size: 2rem; }
+.list-container .header .amount {
+    vertical-align: baseline;
+    font-size: 1.2rem;
+    font-weight: 500; }
+.list-container .results-list {
+    position: relative;
+    list-style: none;
+    padding: 0rem;
+    margin: 0rem; }
+.list-container .results-list .list-item {
+    margin: 0rem 3.5rem;
+    position: relative;
+    font-size: 0.9rem;
+    padding: 1rem 0.625rem;
+    border-bottom: 1px solid #eee; }
+.list-container .results-list .list-item div {
+    display: inline-block; }
+.list-container .results-list .list-item .list-item-overflow {
+    display: block;
+    height: 6.875rem;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.list-container .results-list .list-item .entity-name {
+    font-size: 1.4rem;
+    color: blue; }
+.list-container .results-list .list-item .entity-alias {
+    font-weight: 600; }
+.list-container .results-list .list-item .problem-list {
+    padding: 0rem;
+    list-style: none; }
+.list-container .results-list .list-item .problem-list .list-item {
+    margin: 0rem;
+    padding-left: 0;
+    border: none;
+    font-size: 0.9rem;
+    overflow: hidden; }
+.list-container .results-list .list-item .problem-list .list-item .severity, .list-container .results-list .list-item .problem-list .list-item .type {
+    font-size: 1.1rem; }
+.list-container .results-list .list-item .problem-list .list-item .timestamp {
+    position: relative;
+    font-weight: 600;
+    right: 0;
+    padding-left: 0.25rem; }
+.list-container .results-list .list-item .problem-list .list-item .newtab {
+    color: #2bbdd4; }
+.list-container .results-list .list-item .data {
+    border-collapse: collapse; }
+.list-container .results-list .list-item .data tbody tr td {
+    color: #999;
+    padding: 0 0.625rem;
+    height: 2.5rem; }
+.list-container .results-list .list-item .data tbody tr td span {
+    color: black;
+    vertical-align: baseline; }
+.list-container .results-list .list-item .data tbody tr td span.trend img {
+    height: 1.375rem; }
+.list-container .results-list .list-item .expand-item {
+    display: inline-block;
+    color: #2bbdd4;
+    font-weight: 500;
+    font-size: 0.9rem; }
+.list-container .results-list .list-item .expand-item:hover {
+    color: #0040ff;
+    cursor: pointer; }
+.list-container .expand-list {
+    display: inline-block;
+    color: #2bbdd4;
+    margin: 1rem 3.5rem 0rem;
+    font-weight: 500;
+    font-size: 0.9rem; }
+.list-container .expand-list:hover {
+    color: #0040ff;
+    cursor: pointer; }

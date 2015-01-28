@@ -1,0 +1,9 @@
+#!/bin/bash
+while IFS= read -r line
+do
+    echo "$line"
+    if [[ "$line" =~ "$1".*$ ]]
+    then
+        cat $2
+    fi
+done < $3

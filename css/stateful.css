@@ -1,0 +1,18 @@
+/*!
+* Stateful.js v0.01
+* SPA Micro-Framework
+* MIT and Apache 2.0 Dual Licensed (C) 2014 Marc Fawzi
+* Derived in part from OrganicJS, Apache 2.0 Licensed (C) 2013 Marc Fawzi
+*/
+
+/*
+*   Put nothing but styles needed by the framework
+*/
+[page] {
+  display: none; }
+
+[cloneable] {
+  display: none; }
+
+[repeatable] {
+  display: none; }

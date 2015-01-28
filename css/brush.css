@@ -1,0 +1,22 @@
+svg {
+    font-size: 10px;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    clip-path: url(#clip);
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.brush .extent {
+    stroke: #fff;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}

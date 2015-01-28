@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<title></title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <link href="css/stateful.css" rel="stylesheet" type="text/css" />
+    <link href="css/cloneables.css" rel="stylesheet" type="text/css" />
+    <link href="css/pure-button.css" rel="stylesheet" type="text/css" />
+    <link href="css/brush.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<!-- cloneables -->
+<div cloneable name="listView">
+    <div class="list-container">
+        <div class="header">
+            <span class="list-title">Found&nbsp;</span><span class="list-title" name="numResults"></span>&nbsp;<span class="list-title" name="entityTitle">instances of this counter</span>
+        </div>
+        <ul class="results-list" name="listOverflow">
+            <li class="list-item" repeatable name="listItem">
+                <div class="list-item-overflow" name="listItemOverflow">
+                    <div class="item-name" name="itemName"></div>
+                    <div class="problem-list">
+                        <div class="list-item">
+                            <div class="severity icon-alert"></div>
+                            <div class="type"></div>
+                            <div class="text" name="metricDate"></div>
+                            <div class="view"></div>
+                        </div>
+                    </div>
+                    <table class="data">
+                        <tbody>
+                            <tr>
+                                <td name="i1"><span name="i1_value"></span></td>
+                                <td name="i2"><span name="i2_value"></span></td>
+                                <td name="i3"><span name="i3_value"></span>
+                                                <span class="trend" name="i3_trend">
+                                                </span>
+                                </td>
+                                <td name="i4"><span name="i4_value"></span>
+                                                <span class="trend" name="i4_trend">
+                                                </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div repeatable name="chart">
+                        <div class="chart-container" name="chartWidgetContainer"></div>
+                        
+                        <!--
+                        <div repeatable name="subchart">
+                            <div name="chartThing"></div>
+                        </div>  -->
+
+                    </div>
+                </div>
+                <div class="expand-item" name="moreOrLessInfo"></div>
+            </li>
+        </ul>
+        <div class="expand-list" name="expandShrinkList"></div>
+    </div>
+</div>
+
+<div cloneable name="searchBox">
+    <div name="outerBox">
+        <div>
+            <p class="title-text" name="title"></p>
+            <input type="text" class="search-box-input" name="inputBox"/>
+            <div class="search-box-suggestions" name="suggestions"></div>
+        </div>
+    </div>
+</div>
+
+<div cloneable name="searchButton">
+    <button class="pure-button search-button" name="search">
+        <i class="icon-go"></i>
+    </button>
+</div>
+
+<div cloneable name="problemsList">
+    <div class="problems-container">
+        <div class="header"></div>
+        <div class="body">
+            <div class="title">Live Stream (not implemented yet)</div>
+            <ul class="problems-list">
+                <li class="list-item" repeatable name="listItem">
+                    <div class="type icon-bars" name="bars"></div>
+                    <div class="type icon-gauge" name="gauge"></div>
+                    <div class="text" name="text"></div>
+                    <div class="group_right">
+                        <div class="timestamp" name="timestamp"></div>
+                        <div class="newtab icon-newtab" name="newtab"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="expand-list" name="expandList">show 25 more</div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</div>
+
+<!-- login pae to be defined -->
+<!-- settings page be defined -->
+
+<!-- home page -->
+<div page="home">
+    <div>
+        <div class="box-container thin">
+            <div>
+                <div class="title-text">Stateful UI - v0.01 (demo)</div>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td search-clone>
+                    </td>
+                    <td button-clone>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div problems-clone></div>
+</div>
+<!-- end of home page -->
+
+<!-- search results page -->
+<div page="search">
+    <div>
+        <div class="box-container thin">
+            <div>
+                <div class="title-text">Stateful UI - v0.01 (demo)</div>
+            </div>
+        </div>
+    </div>
+    <div class="box-container">
+        <table>
+            <tbody>
+                <tr>
+                    <td search-clone>
+                    </td>
+                    <td button-clone>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div listview-clone>
+    </div>
+</div>
+<!-- end of search results page -->
+
+<!-- other pages to be defined here (they're arrived at from places other than search) -->
+
+<!-- jQuery 2.1.0 -->
+<script src="js/jquery.min.js"></script>
+<!-- Lo-dash -->
+<script src="js/lodash.min.js"></script>
+<!-- D3 -->
+<script src="js/d3.v3.min.js"></script>
+<!-- 3rd party widgets/plugins -->
+<script src="js/chartWidget.js"></script>
+<!-- Backbone 1.1.0 -->
+<script src="js/backbone-min.js"></script>
+<!-- Stateful -->
+<script src="js/stateful.js"></script>
+<!-- App -->
+<script src="index.bundle.js"></script>
+
